@@ -128,3 +128,96 @@ Many sciences rely on observation instead of (or in addition to) designed experi
 
 -----
 
+## Question 10
+Discuss the difference between the precision of a measurement and the terms single and double precision, as they are used in computer science, typically to represent floating-point numbers that require 32 and 64 bits, respectively.
+
+-----
+
+## Question 11
+Give at least two advantages to working with data stored in text files instead of a binary format.
+
+-----
+
+## Question 12
+Distinguish between _noise_ and _outliers_. Be sure to consider the following questions:
+
+A) Is noise ever interesting or desirable? Outliers?
+B) Can noise objects be outliers?
+C) Are noise objects always outliers?
+D) Are outliers always noise objects?
+E) Can noise make a typical value into an unusual one, or vice versa?
+
+-----
+
+## Question 13
+Consider the problem of finding the $K$ nearest neighbors of a data object. A programmer designs Algorithm 2.1 for this task.
+
+##### Algorithm 2.1: Algorithm for finding K nearest neighbors
+1) **for** $i$ = 1 to _number of data objects_ **do**
+2)     Find the distances of the $i^{th}$ object to all other objects.
+3)     Sort these distances in decreasing order.
+4)     **return** the objects associated with the first $K$ distances of the sorted list
+5) **end for**
+
+A) **Describe the potential problems with this algorithm if there are duplicate objects in the data set. Assume the distance function will only return a distance of 0 for objects that are the same.**
+
+B) **How would you fix this problem?**
+
+-----
+
+## Question 14
+The following attributes are measured for members of a herd of Asian elephants: _weight, height, tusk length, trunk length,_ and _ear area_. Based on these measurements, what sort of similarity measure from Section 2.4 would you use to compare or group these elephants? Justify your answer and explain any special circumstances.
+
+-----
+
+## Question 15
+You are given a set of $m$ objects that is divided into $K$ groups, where the $i^{th}$ group is size $m_{i}$. If the goal is to obtaina sample of size $n < m$, what is the difference between the following two sampling schemes? (Assume sampling with replacement.)
+
+A) We randomly select $n*m_{i}/m$ elements from each group.
+B) We randomly select $n$ elements from the data set, without regard for the group to which an object belongs.
+
+-----
+
+## Question 16
+Consider a document-term matrix, where $tf_{ij}$ is the frequency of the $i^{th}$ word (term) in the $j^{th}$ document and $m$ is the number of documents. Consider the variable transformation that is defined by:
+
+$$ tf'_{ij} = tf_{ij} * \log\frac{m}{df_{i}}, $$
+where $df$ is the number of documents in which the $i^{th}$ term appears and is known as the **document frequency** of the term. This transformation is known as the **inverse document frequency** transformation.
+
+A) What is the effect of this transformation if a term occurs in one document? In every document?
+
+B) What might be the purpose of this transformation?
+
+-----
+
+## Question 17
+Assume that we apply a square root transformation to a ratio attribute $x$ to obtain the new attribute $x*$. As part of your analysis, you identify an inveral $(a,b)$ in which $x*$ has a linear relationship to another attribute $y$.
+
+A) What is the corresponding interval $(a,b)$ in terms of $x$? 
+B) Give an equation that relates $y$ to $x$. In this interval, $y = x^{2}$.
+
+-----
+
+## Question 18
+This exercise compares and contrasts some similarity and distance measures.
+
+A) For binary data, the L1 distance corresponds to the Hamming distance; that is, the number of bits that are different between two binary vectors. The Jaccard similarity is a measure of the similarity between two binary vectors. Compute the Hamming distance and the Jaccard similarity between the following two binary vectors.
+
+x = 0101010001
+y = 0100011000
+
+B) Which approach, Jaccard or Hamming distance, is more similar to the Simple Matching Coefficient, and which approach is more similar to the cosine measure? Explain.
+
+C) Suppose that you are comparing how similar two organisms of different species are in terms of the number of genes they share. Descrive what measure, Hamming or Jaccard, you think would be more appropriate for comparing the genetic makeup of two organisms. Explain.
+
+D) If you wanted to compare the genetic makeup of two organisms of the same species, e.g., two human beings, would you use the Hamming distance, the Jaccard coefficient, or a different measure of similarity or distance? Explain.
+
+-----
+
+## Question 19
+For the following vectors, **x** and **y**, calculate the indicated similarity or distance measures.
+
+A) 
+
+-----
+
