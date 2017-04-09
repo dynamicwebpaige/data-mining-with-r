@@ -12,8 +12,23 @@ knitr::opts_chunk$set(echo = TRUE)
 -----
 
 ## Question 1
-In the initial example of Chapter 2, the statistician says "Yes, fields 2 and 3 are basically the same." Can you tell from the three lines of sample data that are shown (see below) why she says that?
+In the initial example of Chapter 2, the statistician says "Yes, fields 2 and 3 are basically the same." Can you tell from the three lines of sample data that are shown why she says that?
 
+Field 1 | Field 2 | Field 3 | Field 4 | Field 5
+--- | --- | --- | --- | ---
+012 | 232 | 33.5 | 0 | 10.7
+020 | 121 | 16.9 | 2 | 210.1
+027 | 165 | 24.0 | 0 | 427.6
+
+##### **Answer:**
+
+Upon inspection of the table above, we can see that the second column (containing the values 232, 121, and 165) divided by $\approx$ 7 would create the values in the third column (33.5, 16.9, 24.0).
+
+``` {r}
+field_2 <- c(232, 121, 165)
+field_3 <- c(33.5, 16.9, 24.0)
+field_2 / field_3
+```
 
 -----
 
@@ -33,6 +48,22 @@ J) Military rank.
 K) Distance from the center of campus.
 L) Density of a substance in grams per cubic centimeter.
 M) Coat check number.
+
+##### **Answers:**
+
+* Binary, qualitative, ordinal.
+* Continuous, quantitative, ratio.
+* Discrete, qualitative, ordinal.
+* Continuous, quantitative, ratio.
+* Discrete, qualitative, ordinal.
+* Continuous, quantitative, interval.
+* Discrete, quantitative, ratio.
+* Discrete, qualitative, nominal.
+* Discrete, qualitative, ordinal.
+* Discrete, qualitative, ordinal.
+* Continuous, quantitative, interval.
+* Discrete, quantitative, ratio.
+* Discrete, qualitative, nominal.
 
 -----
 
@@ -56,5 +87,44 @@ You can't really say anything about the _attribute type_ of the original measure
 ## Question 4
 A few months later, you are again approached by the same marketing director as in Question 3. This time, he has devised a better approach to measure the extent to which a customer prefers one product over other, similar products. He explains,
 
-> "When we develop new products, we typically create several variations and evaluate which one customers prefer. Our standard procedure is to give our test subjects all of the product variations at one time and then ask them to rank the product variations in order of preference. However, our test subjects are very indecisive, especially when there are more than two products. As a result, testing takes forever. I suggested that we perform the comparisons in pairs and then use the comparisons to get the rankings."
+> "When we develop new products, we typically create several variations and evaluate which one customers prefer. Our standard procedure is to give our test subjects all of the product variations at one time and then ask them to rank the product variations in order of preference. However, our test subjects are very indecisive, especially when there are more than two products. As a result, testing takes forever. I suggested that we perform the comparisons in pairs and then use the comparisons to get the rankings. Thus, if we have three product variations, we have the customers compare variations 1 and 2, then 2 and 3, and finally 3 and 1. Our testing time with my new procedure is a third of what it was for the old procedure, but the employees conducting the tests complain that they cannot come up with a consistent ranking from the results. And my boss wants the latest product evaluations, yesterday. I should also mention that he was the person who came up with the old product evaluation approach. Can you help me?"
+
+A) **Is the marketing director in trouble? Will his approach work for generating an ordinal ranking of the product variations in terms of customer preference? Explain.**
+
+B) **Is there a way to fix the marketing director's approach? More generally, what can you say about trying to create an ordinal measurement scale based on pairwise comparisons?**
+
+C) **For the original product evaluation scheme, the overall rankings of each product variation are found by computing its average over all test subjects. Comment on whether you think that this is a reasonable approach. What other approaches might you take?**
+
+-----
+
+## Question 5
+Can you think of a situation in which identification numbers would be useful for prediction?
+
+Phone numbers could provide a good prediction of owner location (provided that country codes and area codes were included); and student identification numbers could be good predictors of matriculation year, or graduation year.
+
+-----
+
+## Question 6
+An educational psychologist wants to use _association analysis_ to analyze test results. The test consists of 100 questions with four possible answers each. 
+
+A) **How would you convert this data into a form suitable for association analysis?**
+
+B) **In particular, what type of attributes would you have an how many of them are there?**
+
+-----
+
+## Question 7
+Which of the following quantities is likely to show more temporal autocorrelation: daily rainfall or daily temperature? Why?
+
+-----
+
+## Question 8
+Discuss why a document-term matrix is an example of a data set that has _asymmetric discrete_ or _asymmetric continuous_ features.
+
+-----
+
+## Question 9
+Many sciences rely on observation instead of (or in addition to) designed experiments. Compares the data quality issues involved in observational science with those of experimental science and data mining.
+
+-----
 
