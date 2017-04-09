@@ -1,0 +1,60 @@
+---
+title: 'Chapter 2: Data'
+author: "Paige Bailey"
+date: "April 8, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+-----
+
+## Question 1
+In the initial example of Chapter 2, the statistician says "Yes, fields 2 and 3 are basically the same." Can you tell from the three lines of sample data that are shown (see below) why she says that?
+
+
+-----
+
+## Question 2
+Classify the following attributes as _binary_, _discrete_, or _continuous_. Also classify them as qualitative (**nominal** or **ordinal**) or quantitative (**interval** or **ratio**). Some cases may have more than one interpretation, so briefly indicate your reasoning if you think there may be some ambiguity.
+
+A) Time in terms of AM or PM. 
+B) Brightness, as measured by a light meter.
+C) Brightness, as measured by people's judgments.
+D) Angles as measured in degrees between 0 and 360.
+E) Bronze, silver, and gold medals as awarded at the Olympics.
+F) Height above sea level.
+G) Number of patients in a hospital.
+H) ISBN numbers for books.
+I) Ability to pass light in terms of the following values: opaque, translucent, transparent.
+J) Military rank.
+K) Distance from the center of campus.
+L) Density of a substance in grams per cubic centimeter.
+M) Coat check number.
+
+-----
+
+## Question 3
+You are approached by the marketing director of a local company, who believe that he has devised a foolproof way to measure customer satisfaction. He explains his scheme as follows: 
+
+> "It's so simple that I can't believe that no one has thought of it before. I just keep track of the number of customer complaints for each product. I read in a data mining book that counts are ratio attributes, and so, my measure of product satisfaction must be a ratio attribute. But when I rated the products based on my new customer satisfaction measure and showed them to my boss, he told me that I had overlooked the obvious, and that my measure was worthless. I think that he was just mad because our best-selling product had the worst satisfaction since it had the most complaints. Could you help me set him straight?" 
+
+A) **Who is right, the marketing director or his boss? If you answered 'his boss', what would you do to fix the measure of satisfaction?**
+
+* The boss is correct - the marketing director is not taking into account the number of sales of each product. If I have sold 1,000 widgets and 20 whangdoodles, I will almost certainly have a higher number of complaints for the former. It would be better to gauge customer satisfaction using the equation:
+
+$$ Satisfaction_{product} = \frac{n_{complaints}}{n_{sales}} $$
+
+B) **What can you say about the attribute type of the original product satisfaction attribute?**
+
+You can't really say anything about the _attribute type_ of the original measure based on the product satisfaction (see _Example 2_). For example, two products might have the same level of satisfaction from customers, but different numbers of complaints or sales.
+
+-----
+
+## Question 4
+A few months later, you are again approached by the same marketing director as in Question 3. This time, he has devised a better approach to measure the extent to which a customer prefers one product over other, similar products. He explains,
+
+> "When we develop new products, we typically create several variations and evaluate which one customers prefer. Our standard procedure is to give our test subjects all of the product variations at one time and then ask them to rank the product variations in order of preference. However, our test subjects are very indecisive, especially when there are more than two products. As a result, testing takes forever. I suggested that we perform the comparisons in pairs and then use the comparisons to get the rankings."
+
