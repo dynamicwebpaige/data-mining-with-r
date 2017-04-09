@@ -2,7 +2,11 @@
 title: 'Chapter 1: Introduction'
 author: "Paige Bailey"
 date: "April 8, 2017"
-output: html_document
+output:
+  html_document:
+    theme: "sandstone"
+    toc: true
+    toc_float: true
 ---
 
 ```{r setup, include=FALSE}

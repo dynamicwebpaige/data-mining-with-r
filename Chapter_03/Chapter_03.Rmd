@@ -1,0 +1,103 @@
+---
+title: 'Chapter 2: Data'
+author: "Paige Bailey"
+date: "April 8, 2017"
+output:
+  html_document:
+    theme: "sandstone"
+    toc: true
+    toc_float: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+-----
+
+## Question 1
+Obtain one of the data sets available at the UCI Machine Learning Repository and apply as many of the different visualization techniques described in the chapter as possible. 
+
+-----
+
+## Question 2
+Identify at least two advantages and two disadvantages of using color to visually represent information.
+
+-----
+
+## Question 3
+What are the arrangement issues that arise with respect to three-dimensional plots?
+
+-----
+
+## Question 4
+Discuss the advantages and disadvantages of using sampling to reduce the number of data objects that need to be displayed. Would simple random sampling (without replacement) be a good approach to sampling? Why or why not?
+
+-----
+
+## Question 5
+Describe how you would create visualizations to display information that describes the following types of systems. Be sure to address the following issues:
+
+* **Representation**. How will you map objects, attributes, and relationships to visual elements?
+* **Arrangement**. Are there any special considerations that need to be taken into account with respect to how visual elements are displayed? Specific examples might be the choice of viewpoint, the use of transparency, or the separation of certain groups of objects.
+* **Selection**. How will you handle a large number of attributes and data objects?
+
+------
+
+## Question 6
+Describe one advantage and one disadvantage of a stem and leaf plot with respect to a standard histogram.
+
+------
+
+## Question 7
+How might you address the problem that a histogram depends on the number and location of the bins?
+
+------
+
+## Question 8
+Describe how a box plot can give information about whether the value of an attribute is symmetrically distributed. What can you say about the symmetry of the distributions of the attributes shown in Figure 3.11?
+
+-----
+
+## Question 9
+Compare sepal length, sepal width, petal length, and petal width, using Figure 3.12.
+
+-----
+
+## Question 10
+Comment on the use of a box plot to explore a data set with four atributes: age, weight, height, and income.
+
+-----
+
+## Question 11
+Give a possible explanation as to why most of the values of petal length and width fall in the buckets along the diagonal in Figure 3.9.
+
+------
+
+## Question 12
+Use Figures 3.14 and 3.15 to identify a characteristic shared by the petal width and petal length attributes.
+
+-----
+
+## Question 13
+Simple line plots, such as that displayed in Figure 2.12, which shows two time series, can be used to effectively display high-dimensional data. For example, it is easy to tell that the frequencies of the two time series are different. What characteristic of time series allows the effective visualization of high-dimensional data?
+
+-----
+
+## Question 14
+Describe the types of situations that produce sparse or dense data cubes. Illustrate with examples other than those used in the book.
+
+-----
+
+## Question 15
+How might you extend the notion of multidimensional data analysis so that the target variable is a qualitative variable? In other words, what sorts of summary statistics or data visualizations would be of interest?
+
+------
+
+## Question 16
+Construct a data cube from Table 3.1. Is this a dense or a sparse data cube? If it is sparse, identify the cells that are empty.
+
+-----
+
+## Question 17
+Discuss the differences between dimensionality reduction based on aggregation and dimensionality reduction based on techniques such as PCA and SVD.
