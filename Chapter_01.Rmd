@@ -1,0 +1,70 @@
+---
+title: 'Chapter 1: Introduction'
+author: "Paige Bailey"
+date: "April 8, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+-----
+
+## Question 1
+_Discuss whether or not each of the following activities is a data mining task._
+
+* Dividing the customers of a company according to their gender.
+* Dividing the customers of a company according to their profitability.
+* Computing the total sales of a company.
+* Sorting a student database based on student identification numbers.
+* Predicting the outcome of tossing a (fair) pair of dice.
+* Predicting the future stock price of a company using historical records.
+* Monitoring the heart rate of a patient for abnormalities.
+* Monitoring seismic waves for earthquake activities.
+* Extracting the frequencies of a sound wave.
+
+##### **Answers**:
+
+A) **No**, this would not be a data mining task, just a query to the company's database.
+B) **No**, this would be a sum of a customer's purchases, and then the application of thresholds.
+C) **No**, this would just be the sum of the company's sales.
+D) **No**, this task would be a sort on an ID column in the student database.
+E) **No**. Since the die are fair, this would be considered a probability calculation.
+F) **Yes**! This would be a data mining tasks, since we would be building a predictive model for future values of the stock price.
+G) **Yes**, this would be considered a data mining task because we would have to build a mode for normal heart behavior and create an alert when unusual heart-related behavior occurs. 
+H) **Yes**. Similar to the heart rate example above, we would need to build a model for seismic wave behavior associated with earthquake activity, then send an alert when those conditions are observed.
+I) **Nope**, this would be _digital signal processing_. You might by interested in taking a gander at [Signals and Systems](http://signalsand.systems).
+
+-----
+
+## Question 2
+Explore various online applications for data mining. Categorize what are the three applications where predictive tasks are required. Also try to identify the applications in a daily routine where descriptive tasks are required.
+
+##### **Answer**:
+
+Three applications for _predictive analytics_ would be:
+
+* **Cross-selling**: Provided you are a corporation that collects and maintains customer records, you could analyze customers' spending, usage, and other behavior to sell additional products to your current client base. Amazon does this on the regs.
+* **Customer retention**: Predicting (and preventing!) customer churn.
+* **Fraud detection**: similar to the examples listed in _Question 1_, your company could build a model for characteristics of fraud and send an alert when those characteristics are observed in customer transactions.
+
+Descriptive tasks such as classfication could assign news articles into pre-defined categories, like "Entertainment", "Sports", "Politics", "Foreign Affairs", etc. Descriptive analytics can also be used to classify products, and incorporated into marketing strategies for your customer base.
+
+-----
+
+## Question 3
+For each of the following data sets, explain whether or not data privacy is an important issue.
+* Census data collected from 1900 - 1950.
+* IP addresses and visit times of web users who visit your website.
+* Images from earth-orbiting satellites.
+* Names and addresses of people from the telephone book.
+* Names and email addresses collected from the internet.
+
+##### **Answer**:
+
+1) **No**. Census data is freely available [here](https://www.census.gov/data.html), and does not contain sensitive personal information.
+2) **Yes**! IP addresses are highly sensitive information, and should always be protected.
+3) **Nope**. NASA makes these images open, and you can find some of 'em [here](https://worldview.earthdata.nasa.gov/).
+4) **No**. If they were sensitive, they wouldn't be in a public phone book!
+5) **Nope** - same story as #4.
