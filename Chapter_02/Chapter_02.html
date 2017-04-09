@@ -189,7 +189,25 @@ field_2 / field_3</code></pre>
 <li>Density of a substance in grams per cubic centimeter.</li>
 <li>Coat check number.</li>
 </ol>
+<div id="answers" class="section level5">
+<h5><strong>Answers:</strong></h5>
+<ul>
+<li>Binary, qualitative, ordinal.</li>
+<li>Continuous, quantitative, ratio.</li>
+<li>Discrete, qualitative, ordinal.</li>
+<li>Continuous, quantitative, ratio.</li>
+<li>Discrete, qualitative, ordinal.</li>
+<li>Continuous, quantitative, interval.</li>
+<li>Discrete, quantitative, ratio.</li>
+<li>Discrete, qualitative, nominal.</li>
+<li>Discrete, qualitative, ordinal.</li>
+<li>Discrete, qualitative, ordinal.</li>
+<li>Continuous, quantitative, interval.</li>
+<li>Discrete, quantitative, ratio.</li>
+<li>Discrete, qualitative, nominal.</li>
+</ul>
 <hr />
+</div>
 </div>
 <div id="question-3" class="section level2">
 <h2>Question 3</h2>
@@ -214,8 +232,140 @@ field_2 / field_3</code></pre>
 <h2>Question 4</h2>
 <p>A few months later, you are again approached by the same marketing director as in Question 3. This time, he has devised a better approach to measure the extent to which a customer prefers one product over other, similar products. He explains,</p>
 <blockquote>
-<p>“When we develop new products, we typically create several variations and evaluate which one customers prefer. Our standard procedure is to give our test subjects all of the product variations at one time and then ask them to rank the product variations in order of preference. However, our test subjects are very indecisive, especially when there are more than two products. As a result, testing takes forever. I suggested that we perform the comparisons in pairs and then use the comparisons to get the rankings.”</p>
+<p>“When we develop new products, we typically create several variations and evaluate which one customers prefer. Our standard procedure is to give our test subjects all of the product variations at one time and then ask them to rank the product variations in order of preference. However, our test subjects are very indecisive, especially when there are more than two products. As a result, testing takes forever. I suggested that we perform the comparisons in pairs and then use the comparisons to get the rankings. Thus, if we have three product variations, we have the customers compare variations 1 and 2, then 2 and 3, and finally 3 and 1. Our testing time with my new procedure is a third of what it was for the old procedure, but the employees conducting the tests complain that they cannot come up with a consistent ranking from the results. And my boss wants the latest product evaluations, yesterday. I should also mention that he was the person who came up with the old product evaluation approach. Can you help me?”</p>
 </blockquote>
+<ol style="list-style-type: upper-alpha">
+<li><p><strong>Is the marketing director in trouble? Will his approach work for generating an ordinal ranking of the product variations in terms of customer preference? Explain.</strong></p></li>
+<li><p><strong>Is there a way to fix the marketing director’s approach? More generally, what can you say about trying to create an ordinal measurement scale based on pairwise comparisons?</strong></p></li>
+<li><p><strong>For the original product evaluation scheme, the overall rankings of each product variation are found by computing its average over all test subjects. Comment on whether you think that this is a reasonable approach. What other approaches might you take?</strong></p></li>
+</ol>
+<hr />
+</div>
+<div id="question-5" class="section level2">
+<h2>Question 5</h2>
+<p>Can you think of a situation in which identification numbers would be useful for prediction?</p>
+<p>Phone numbers could provide a good prediction of owner location (provided that country codes and area codes were included); and student identification numbers could be good predictors of matriculation year, or graduation year.</p>
+<hr />
+</div>
+<div id="question-6" class="section level2">
+<h2>Question 6</h2>
+<p>An educational psychologist wants to use <em>association analysis</em> to analyze test results. The test consists of 100 questions with four possible answers each.</p>
+<ol style="list-style-type: upper-alpha">
+<li><p><strong>How would you convert this data into a form suitable for association analysis?</strong></p></li>
+<li><p><strong>In particular, what type of attributes would you have an how many of them are there?</strong></p></li>
+</ol>
+<hr />
+</div>
+<div id="question-7" class="section level2">
+<h2>Question 7</h2>
+<p>Which of the following quantities is likely to show more temporal autocorrelation: daily rainfall or daily temperature? Why?</p>
+<hr />
+</div>
+<div id="question-8" class="section level2">
+<h2>Question 8</h2>
+<p>Discuss why a document-term matrix is an example of a data set that has <em>asymmetric discrete</em> or <em>asymmetric continuous</em> features.</p>
+<hr />
+</div>
+<div id="question-9" class="section level2">
+<h2>Question 9</h2>
+<p>Many sciences rely on observation instead of (or in addition to) designed experiments. Compares the data quality issues involved in observational science with those of experimental science and data mining.</p>
+<hr />
+</div>
+<div id="question-10" class="section level2">
+<h2>Question 10</h2>
+<p>Discuss the difference between the precision of a measurement and the terms single and double precision, as they are used in computer science, typically to represent floating-point numbers that require 32 and 64 bits, respectively.</p>
+<hr />
+</div>
+<div id="question-11" class="section level2">
+<h2>Question 11</h2>
+<p>Give at least two advantages to working with data stored in text files instead of a binary format.</p>
+<hr />
+</div>
+<div id="question-12" class="section level2">
+<h2>Question 12</h2>
+<p>Distinguish between <em>noise</em> and <em>outliers</em>. Be sure to consider the following questions:</p>
+<ol style="list-style-type: upper-alpha">
+<li>Is noise ever interesting or desirable? Outliers?</li>
+<li>Can noise objects be outliers?</li>
+<li>Are noise objects always outliers?</li>
+<li>Are outliers always noise objects?</li>
+<li>Can noise make a typical value into an unusual one, or vice versa?</li>
+</ol>
+<hr />
+</div>
+<div id="question-13" class="section level2">
+<h2>Question 13</h2>
+<p>Consider the problem of finding the <span class="math inline">\(K\)</span> nearest neighbors of a data object. A programmer designs Algorithm 2.1 for this task.</p>
+<div id="algorithm-2.1-algorithm-for-finding-k-nearest-neighbors" class="section level5">
+<h5>Algorithm 2.1: Algorithm for finding K nearest neighbors</h5>
+<ol style="list-style-type: decimal">
+<li><strong>for</strong> <span class="math inline">\(i\)</span> = 1 to <em>number of data objects</em> <strong>do</strong></li>
+<li>Find the distances of the <span class="math inline">\(i^{th}\)</span> object to all other objects.</li>
+<li>Sort these distances in decreasing order.</li>
+<li><strong>return</strong> the objects associated with the first <span class="math inline">\(K\)</span> distances of the sorted list</li>
+<li><strong>end for</strong></li>
+</ol>
+<ol style="list-style-type: upper-alpha">
+<li><p><strong>Describe the potential problems with this algorithm if there are duplicate objects in the data set. Assume the distance function will only return a distance of 0 for objects that are the same.</strong></p></li>
+<li><p><strong>How would you fix this problem?</strong></p></li>
+</ol>
+<hr />
+</div>
+</div>
+<div id="question-14" class="section level2">
+<h2>Question 14</h2>
+<p>The following attributes are measured for members of a herd of Asian elephants: <em>weight, height, tusk length, trunk length,</em> and <em>ear area</em>. Based on these measurements, what sort of similarity measure from Section 2.4 would you use to compare or group these elephants? Justify your answer and explain any special circumstances.</p>
+<hr />
+</div>
+<div id="question-15" class="section level2">
+<h2>Question 15</h2>
+<p>You are given a set of <span class="math inline">\(m\)</span> objects that is divided into <span class="math inline">\(K\)</span> groups, where the <span class="math inline">\(i^{th}\)</span> group is size <span class="math inline">\(m_{i}\)</span>. If the goal is to obtaina sample of size <span class="math inline">\(n &lt; m\)</span>, what is the difference between the following two sampling schemes? (Assume sampling with replacement.)</p>
+<ol style="list-style-type: upper-alpha">
+<li>We randomly select <span class="math inline">\(n*m_{i}/m\)</span> elements from each group.</li>
+<li>We randomly select <span class="math inline">\(n\)</span> elements from the data set, without regard for the group to which an object belongs.</li>
+</ol>
+<hr />
+</div>
+<div id="question-16" class="section level2">
+<h2>Question 16</h2>
+<p>Consider a document-term matrix, where <span class="math inline">\(tf_{ij}\)</span> is the frequency of the <span class="math inline">\(i^{th}\)</span> word (term) in the <span class="math inline">\(j^{th}\)</span> document and <span class="math inline">\(m\)</span> is the number of documents. Consider the variable transformation that is defined by:</p>
+<p><span class="math display">\[ tf'_{ij} = tf_{ij} * \log\frac{m}{df_{i}}, \]</span> where <span class="math inline">\(df\)</span> is the number of documents in which the <span class="math inline">\(i^{th}\)</span> term appears and is known as the <strong>document frequency</strong> of the term. This transformation is known as the <strong>inverse document frequency</strong> transformation.</p>
+<ol style="list-style-type: upper-alpha">
+<li><p>What is the effect of this transformation if a term occurs in one document? In every document?</p></li>
+<li><p>What might be the purpose of this transformation?</p></li>
+</ol>
+<hr />
+</div>
+<div id="question-17" class="section level2">
+<h2>Question 17</h2>
+<p>Assume that we apply a square root transformation to a ratio attribute <span class="math inline">\(x\)</span> to obtain the new attribute <span class="math inline">\(x*\)</span>. As part of your analysis, you identify an inveral <span class="math inline">\((a,b)\)</span> in which <span class="math inline">\(x*\)</span> has a linear relationship to another attribute <span class="math inline">\(y\)</span>.</p>
+<ol style="list-style-type: upper-alpha">
+<li>What is the corresponding interval <span class="math inline">\((a,b)\)</span> in terms of <span class="math inline">\(x\)</span>?</li>
+<li>Give an equation that relates <span class="math inline">\(y\)</span> to <span class="math inline">\(x\)</span>. In this interval, <span class="math inline">\(y = x^{2}\)</span>.</li>
+</ol>
+<hr />
+</div>
+<div id="question-18" class="section level2">
+<h2>Question 18</h2>
+<p>This exercise compares and contrasts some similarity and distance measures.</p>
+<ol style="list-style-type: upper-alpha">
+<li>For binary data, the L1 distance corresponds to the Hamming distance; that is, the number of bits that are different between two binary vectors. The Jaccard similarity is a measure of the similarity between two binary vectors. Compute the Hamming distance and the Jaccard similarity between the following two binary vectors.</li>
+</ol>
+<p>x = 0101010001 y = 0100011000</p>
+<ol start="2" style="list-style-type: upper-alpha">
+<li><p>Which approach, Jaccard or Hamming distance, is more similar to the Simple Matching Coefficient, and which approach is more similar to the cosine measure? Explain.</p></li>
+<li><p>Suppose that you are comparing how similar two organisms of different species are in terms of the number of genes they share. Descrive what measure, Hamming or Jaccard, you think would be more appropriate for comparing the genetic makeup of two organisms. Explain.</p></li>
+<li><p>If you wanted to compare the genetic makeup of two organisms of the same species, e.g., two human beings, would you use the Hamming distance, the Jaccard coefficient, or a different measure of similarity or distance? Explain.</p></li>
+</ol>
+<hr />
+</div>
+<div id="question-19" class="section level2">
+<h2>Question 19</h2>
+<p>For the following vectors, <strong>x</strong> and <strong>y</strong>, calculate the indicated similarity or distance measures.</p>
+<ol style="list-style-type: upper-alpha">
+<li></li>
+</ol>
+<hr />
 </div>
 
 
