@@ -1,5 +1,5 @@
 ---
-title: 'Chapter 2: Data'
+title: 'Chapter 3: Exploring Data'
 author: "Paige Bailey"
 date: "April 8, 2017"
 output:
